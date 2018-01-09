@@ -2,6 +2,7 @@ package com.sun.tour.base;
 
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.sun.tour.R;
 import com.sun.tour.utils.SystemStatueBarUtil;
+import com.sun.tour.utils.ToastUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -91,6 +93,32 @@ public class BaseActivity extends AppCompatActivity {
     @OnClick(R.id.framelayout_left_base)//左侧返回按钮点击事件
     public void onLeftMenuClick(){
         onBackPressed();
+    }
+
+    /**
+     * 弹系统消息
+     *
+     * @param id 资源id in strings.xml
+     */
+    public void showToast(@StringRes int id) {
+        ToastUtil.showToast(this, id);
+    }
+
+
+    /**
+     * 弹系统消息
+     *
+     * @param text 需要显示的文本
+     */
+    public void showToast(@NonNull String text) {
+        ToastUtil.showToast(this, text);
+    }
+
+    /**
+     * 关闭统消息
+     */
+    public void closeToast() {
+        ToastUtil.dismissToast();
     }
 
     public void exit() {

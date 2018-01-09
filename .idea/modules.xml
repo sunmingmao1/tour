@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Tour.iml" filepath="$PROJECT_DIR$/Tour.iml" />
+      <module fileurl="file://D:\Android\tour\Tour.iml" filepath="D:\Android\tour\Tour.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Android\tour\app\app.iml" filepath="D:\Android\tour\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tour.iml" filepath="$PROJECT_DIR$/tour.iml" />
     </modules>
   </component>
 </project>
