@@ -5,6 +5,12 @@ import android.view.KeyEvent;
 
 import com.sun.tour.base.BaseActivity;
 
+/**
+ *
+ *
+ * 首页
+ *
+ */
 public class MainActivity extends BaseActivity {
 
     @Override
@@ -13,6 +19,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setTopTitle("首页");
         //
+
     }
 
     @Override
