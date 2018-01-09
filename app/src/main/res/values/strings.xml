@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tour</string>
+    <string name="main_backpress_exit">再按一次退出程序</string>
 </resources>
